@@ -1,0 +1,313 @@
+/* --------- GLOBAL : START -------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap');
+
+:root {
+ --dark-purple: #610C63;
+ --purple: #937DC2;
+ --green: #1CD6CE;
+ --Darkgreen: #26A96C;
+ --pink: #F675A8;
+ --brown: #FFC090;
+ --coral: #F87575;
+ --yellow: #F1D904;
+ --blue: #1FADFF;
+ --black: #000;
+ --white: #fff;
+ --grey: #666;
+ --box-shadow: 2px 1px 8px -3px rgba(0, 0, 0, 0.2);
+ --text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+ --border-radius: 94% 6% 92% 8% / 9% 94% 6% 91%;
+}
+
+* {
+ font-family: 'Lato', sans-serif;
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ outline: none;
+ border: none;
+ text-decoration: none;
+ text-transform: capitalize;
+ -webkit-transition: all 0.2s linear;
+ -moz-transition: all 0.2s linear;
+ -o-transition: all 0.2s linear;
+ transition: all 0.2s linear;
+}
+
+*::selection {
+ color: var(--white);
+ background-color: var(--purple);
+}
+
+section {
+ padding: 2rem 5%;
+ height: 100vh;
+}
+
+html {
+ font-size: 62.6%;
+ overflow-x: hidden;
+ scroll-padding-top: 5rem;
+ scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+ width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+ background: var(--dark-purple);
+}
+
+html::-webkit-scrollbar-thumb {
+ background: var(--pink);
+ border-radius: 0.5rem;
+}
+
+.main-page{
+ -webkit-animation: background1 4s linear infinite;
+ animation: background1 4s linear infinite;
+}
+
+@-webkit-keyframes background1 {
+
+ 0%,
+ 100% {
+  background: url(/images/2.svg);
+  background-size: cover;
+  background-position: center;
+ }
+
+ 33% {
+  background: url(/images/3.svg);
+  background-size: cover;
+  background-position: center;
+ }
+
+ 66% {
+  background: url(/images/1.svg);
+  background-size: cover;
+  background-position: center;
+ }
+}
+
+@keyframes background1 {
+
+ 0%,
+ 100% {
+  background: url(/images/2.svg);
+  background-size: cover;
+  background-position: center;
+ }
+
+ 33% {
+  background: url(/images/3.svg);
+  background-size: cover;
+  background-position: center;
+ }
+
+ 66% {
+  background: url(/images/1.svg);
+  background-size: cover;
+  background-position: center;
+ }
+}
+
+
+/* -------- GLOBAL : END --------- */
+
+
+/*------------------- Main Area CSS (Start) ----------------*/
+.main-page .box-container {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ gap: 2rem;
+}
+
+.main-page .image {
+ -webkit-box-flex: 1;
+ -ms-flex: 1 1 40rem;
+ flex: 1 1 40rem;
+ height: 45rem;
+}
+
+.main-page .image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ -webkit-animation: aboutImage 8s linear infinite;
+ animation: aboutImage 8s linear infinite;
+}
+
+@-webkit-keyframes aboutImage {
+
+ 0%,
+ 100% {
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
+  border-radius: var(--border-radius);
+ }
+
+ 50% {
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  border-radius: 8% 92% 8% 92% / 92% 6% 94% 8%;
+ }
+}
+
+@keyframes aboutImage {
+
+ 0%,
+ 100% {
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
+  border-radius: var(--border-radius);
+ }
+
+ 50% {
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  border-radius: 8% 92% 8% 92% / 92% 6% 94% 8%;
+ }
+}
+
+.main-page .content {
+ -webkit-box-flex: 1;
+ -ms-flex: 1 1 40rem;
+ flex: 1 1 40rem;
+ text-align: center;
+}
+
+.main-page .content h2 {
+ font-family: 'DynaPuff', cursive;
+ color: var(--pink);
+ font-size: 4rem;
+ letter-spacing: 0.1rem;
+ padding-bottom: 2rem;
+}
+
+
+
+/*--------------------- Main Area CSS (End) ----------------------*/
+
+/* -------------------- Decrypt Area Css (Start) ----------------- */
+
+.dec-container {
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.dec-container .box {
+ border: 1px solid var(--pink);
+ padding: 4rem 3rem;
+ border-radius: 3rem;
+}
+
+.dec-container .box h1 {
+ font-family: 'DynaPuff', cursive;
+ color: var(--pink);
+ font-size: 4rem;
+ letter-spacing: 0.1rem;
+ padding-bottom: 2rem;
+}
+
+.dec-container .box h2 {
+ font-size: 2rem;
+ color: var(--dark-purple);
+}
+
+.dec-container .box input {
+ 
+}
+.dec-container .box input {
+ width: 100%;
+ font-size: 1.6rem;
+ color: var(--black);
+ text-transform: none;
+ background-color: transparent;
+ border-bottom: 0.1rem solid var(--purple);
+ padding: 1rem;
+ margin-bottom: 1rem;
+}
+
+.dec-container .box input::placeholder {
+ text-transform: capitalize;
+ color: var(--grey);
+}
+
+.dec-container .box input:focus {
+ border-color: var(--pink);
+}
+
+.dec-container .inner-box {
+ margin-top: 2.5rem;
+}
+
+.dec-container .inner-box h2 {
+ margin-bottom: 1rem;
+}
+
+.button-1 {
+ display: block;
+ padding: 2rem;
+ text-align: center;
+ font-size: 2.5rem;
+ font-weight: bold;
+ width: 100%;
+ color: var(--white);
+ background-color: var(--purple);
+ margin: 2rem;
+ border-radius: 8% 92% 8% 92% / 92% 6% 94% 8%;
+}
+
+.button-1 a {
+ color: var(--white);
+}
+
+.btn-2 {
+ background-color: var(--coral);
+}
+
+.button-1:hover {
+ scale: 1.05;
+}
+
+/* --------------------------- Decrypt Area (END) ------------------- */
+
+/* --------------------------- BUTTON : START ----------------------- */
+
+.btn {
+ width: 100%;
+ display: block;
+ color: var(--white);
+ background: -webkit-linear-gradient(left, var(--pink), var(--purple));
+ background: linear-gradient(to right, var(--pink), var(--purple));
+ font-family: Trebuchet MS;
+ font-size: 2rem;
+ font-weight: 600;
+ padding: 1.2rem 2rem;
+ border-radius: var(--border-radius);
+ margin-top: 2rem;
+}
+
+.btn:hover {
+ cursor: pointer;
+ background: -webkit-linear-gradient(left, #f782b1, #9c8cc0);
+ background: linear-gradient(to right, #f782b1, #9c8cc0);
+ -webkit-transform: scale(0.95);
+ transform: scale(0.95);
+}
+/* --------------------------- BUTTON : END ------------------------- */
